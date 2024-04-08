@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Hidden</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 collapse collapse-horizontal show bg-dark p-0 sidebar" id="sidebar">
+          <div class="w-100 p-3" style="">
+            <nav class="text-white">
+              <div class="input-group rounded mb-3">
+                <input type="search" class="form-control rounded" placeholder="Rechercher" aria-label="Search" aria-describedby="search-addon" />
+                <span class="input-group-text border-0 bg-dark" id="search-addon">
+                  <i class="fas fa-search text-white"></i>
+                </span>
+              </div>
+              <div class="navbar-heading">Navigation</div>
+              <a class="nav-link" href="accueil.html">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-house"></i></div>
+                Accueil
+              </a>
+              <a class="nav-link" href="recherche.html">
+                <div class="sb-nav-link-icon"><i class="fas fa-search"></i></div>
+                Recherche
+              </a>
+              <a class="nav-link" href="tags.html">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-list"></i></div>
+                Tous les tags
+              </a>
+
+              <a class="nav-link" href="createurs.html">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
+                Tous les créateurs
+              </a>
+              <div class="navbar-heading">Compte</div>
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="dashboard-visiteur.html">Mon espace</a></li>
+                <li><a class="dropdown-item" href="dashboard-createur.html">Mon espace (créateur)</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#!">Déconnexion</a></li>
+              </ul>
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#connexionModal">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+                Connexion
+              </a>
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#inscriptionModal">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-user-plus"></i></div>
+                Inscription
+              </a>
+              <a class="nav-link" href="devenir-createur.html">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-heart"></i></div>
+                Devenir créateur
+              </a>
+
+              <div class="navbar-heading">Qui sommes nous?</div>
+              <a class="nav-link" href="charts.html">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-eye-slash"></i></div>
+                Hidden
+              </a>
+              <a class="nav-link" href="tables.html">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-calendar"></i></div>
+                Comment reserver?
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="col mt-n5 px-0" id="main-content">
+          <div class="row">
+            <a class="navbar-brand ps-3 text-start col-12" href="homepage.html"><img src="assets/img/oeil_ferme.png" class="text" style="width: 50px" /></a>
+          </div>
+          <button class="btn btn-dark ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar"><i class="fa-solid fa-bars"></i></button>
+
+          <section>
+            <div class="row justify-content-center bg-dark mt-3 m-3 p-3" id="bloc-tendances">
+              <h3 class="text-white">Tendances</h3>
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="row justify-content-center">
+                  <div class="carousel-inner col-10 carousel-inner-accueil">
+                    <div class="carousel-item active col-12">
+                      <div class="row">
+                        <div class="col-3 p-1">
+                          <div class="col-12 bg-secondary bloc-tendance">
+                            <div class="col-12 h-100 bg-light">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" class="img-fluid img-tendances" />
+                              <p class="tendances-title">Titre ici</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-3 p-1">
+                          <div class="col-12 bg-secondary bloc-tendance"></div>
+                        </div>
+
+                        <div class="col-3 p-1">
+                          <div class="col-12 bg-secondary bloc-tendance"></div>
+                        </div>
+
+                        <div class="col-3 p-1">
+                          <div class="col-12 bg-secondary bloc-tendance"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item col-12">
+                      <div class="row">
+                        <div class="col-3 p-1">
+                          <div class="col-12 bg-secondary bloc-tendance"></div>
+                        </div>
+
+                        <div class="col-3 p-1">
+                          <div class="col-12 bg-secondary bloc-tendance"></div>
+                        </div>
+
+                        <div class="col-3 p-1">
+                          <div class="col-12 bg-secondary bloc-tendance"></div>
+                        </div>
+
+                        <div class="col-3 p-1">
+                          <div class="col-12 bg-secondary bloc-tendance"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item col-12">
+                      <div class="row">
+                        <div class="col-3 p-1">
+                          <div class="col-12 bg-secondary bloc-tendance"></div>
+                        </div>
+
+                        <div class="col-3 p-1">
+                          <div class="col-12 bg-secondary bloc-tendance"></div>
+                        </div>
+
+                        <div class="col-3 p-1">
+                          <div class="col-12 bg-secondary bloc-tendance"></div>
+                        </div>
+
+                        <div class="col-3 p-1">
+                          <div class="col-12 bg-secondary bloc-tendance"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="row mt-3 m-3 p-3" id="bloc-tags">
+              <div class="col-12">
+                <h3 class="float-start">Tags</h3>
+                <p class="float-end">
+                  <a href="tags.html" class="text-decoration-none text-black">Voir plus <i class="fa-solid fa-arrow-right"></i></a>
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="categorie-cadre rounded p-0 m-3">
+                  <a class="text-decoration-none text-black"href="resultat-recherche.html">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" class="img-fluid img-tendances" />
+                  <p class="text-center">Catégorie</p>
+                  </a>
+                </div>
+
+                 <div class="categorie-cadre rounded p-0 m-3">
+                  <a class="text-decoration-none text-black"href="resultat-recherche.html">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" class="img-fluid img-tendances" />
+                  <p class="text-center">Catégorie</p>
+                  </a>
+                </div>
+
+                 <div class="categorie-cadre rounded p-0 m-3">
+                  <a class="text-decoration-none text-black"href="resultat-recherche.html">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" class="img-fluid img-tendances" />
+                  <p class="text-center">Catégorie</p>
+                  </a>
+                </div>
+
+                 <div class="categorie-cadre rounded p-0 m-3">
+                  <a class="text-decoration-none text-black"href="resultat-recherche.html">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" class="img-fluid img-tendances" />
+                  <p class="text-center">Catégorie</p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row ps-5">
+                 <div class="categorie-cadre rounded p-0 m-3">
+                  <a class="text-decoration-none text-black"href="resultat-recherche.html">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" class="img-fluid img-tendances" />
+                  <p class="text-center">Catégorie</p>
+                  </a>
+                </div>
+
+                 <div class="categorie-cadre rounded p-0 m-3">
+                  <a class="text-decoration-none text-black"href="resultat-recherche.html">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" class="img-fluid img-tendances" />
+                  <p class="text-center">Catégorie</p>
+                  </a>
+                </div>
+
+                 <div class="categorie-cadre rounded p-0 m-3">
+                  <a class="text-decoration-none text-black"href="resultat-recherche.html">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" class="img-fluid img-tendances" />
+                  <p class="text-center">Catégorie</p>
+                  </a>
+                </div>
+
+                 <div class="categorie-cadre rounded p-0 m-3">
+                  <a class="text-decoration-none text-black"href="resultat-recherche.html">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" class="img-fluid img-tendances" />
+                  <p class="text-center">Catégorie</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="en_vedette">
+            <div class="row mt-3 m-3 p-3" id="bloc-categorie">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#createurs" type="button" role="tab" aria-controls="createurs" aria-selected="true">Créateurs mis en avant</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="false">Services mis en avant</button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="createurs" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="row">
+                    <div class="col-12 pt-3">
+                      <h3 class="float-start">Créateurs mis en avant</h3>
+                      <a href="createurs.html" class="text-decoration-none text-black float-end">Voir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row grid" data-masonry='{"percentPosition": true }'>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card">
+                         <a class="text-decoration-none text-black"href="createur.html">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 500px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Pseudo du créateur</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card">
+                         <a class="text-decoration-none text-black"href="createur.html">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 300px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Pseudo du créateur</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card">
+                         <a class="text-decoration-none text-black"href="createur.html">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 400px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Pseudo du créateur</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card">
+                         <a class="text-decoration-none text-black"href="createur.html">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 100px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Pseudo du créateur</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card">
+                         <a class="text-decoration-none text-black"href="createur.html">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 600px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Pseudo du créateur</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card">
+                         <a class="text-decoration-none text-black"href="createur.html">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 400px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Pseudo du créateur</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card">
+                         <a class="text-decoration-none text-black"href="createur.html">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 200px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Pseudo du créateur</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card">
+                         <a class="text-decoration-none text-black"href="createur.html">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 100px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Pseudo du créateur</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="row">
+                    <div class="col-12 pt-3">
+                      <h3 class="float-start">Services mis en avant</h3>
+                      <a href="resultat-recherche.html" class="text-decoration-none text-black float-end">Voir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row grid" data-masonry='{"percentPosition": true }'>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card"><a href="service.html" class="text-decoration-none text-black">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 1000px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Nom du service</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card"><a href="service.html" class="text-decoration-none text-black">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 200px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Nom du service</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card"><a href="service.html" class="text-decoration-none text-black">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 500px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Nom du service</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card"><a href="service.html" class="text-decoration-none text-black">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 100px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Nom du service</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card"><a href="service.html" class="text-decoration-none text-black">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 800px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Nom du service</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card"><a href="service.html" class="text-decoration-none text-black">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 100px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Nom du service</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card"><a href="service.html" class="text-decoration-none text-black">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 400px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Nom du service</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-0" style="">
+                      <div class="card"><a href="service.html" class="text-decoration-none text-black">
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" style="height: 500px" />
+
+                        <div class="card-img-overlay d-flex flex-column">
+                          <div class="row mt-auto">Nom du service</div>
+                          <div class="row mt-3">
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                            <div class="tags border border-dark rounded-pill">Tags1</div>
+                          </div>
+                        </div></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="row justify-content-center">
+              <div class="col-10 border">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Iaculis nunc sed augue lacus
+                viverra vitae congue. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Viverra aliquet eget sit amet tellus cras adipiscing. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Ornare lectus sit
+                amet est. Eu feugiat pretium nibh ipsum consequat. Nam at lectus urna duis convallis convallis tellus id. Nulla at volutpat diam ut venenatis tellus in. Egestas purus viverra accumsan in nisl nisi scelerisque eu. Vel eros donec ac
+                odio tempor orci dapibus. Quam id leo in vitae. Ultricies integer quis auctor elit sed vulputate. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Et netus et malesuada fames. Felis bibendum ut tristique et
+                egestas quis ipsum. Convallis aenean et tortor at risus viverra adipiscing at.<br /><br />
+
+                Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Mi ipsum faucibus vitae aliquet nec. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Id consectetur purus ut faucibus pulvinar elementum
+                integer enim. Blandit libero volutpat sed cras ornare. Arcu dui vivamus arcu felis bibendum. Quis enim lobortis scelerisque fermentum dui faucibus in ornare. Neque sodales ut etiam sit amet. Mauris nunc congue nisi vitae. Risus
+                commodo viverra maecenas accumsan lacus vel facilisis volutpat. Adipiscing diam donec adipiscing tristique risus nec. Ut etiam sit amet nisl purus in mollis nunc sed. Nunc id cursus metus aliquam.<br /><br />
+
+                Posuere morbi leo urna molestie at elementum eu. Eget lorem dolor sed viverra ipsum nunc aliquet. Dolor morbi non arcu risus quis varius. Ornare arcu dui vivamus arcu. Risus nullam eget felis eget nunc lobortis mattis aliquam.
+                Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Magna ac placerat vestibulum lectus mauris ultrices eros in. Cum sociis natoque penatibus et magnis dis. Iaculis eu non diam phasellus vestibulum. Pharetra magna ac
+                placerat vestibulum lectus mauris. Elit ut aliquam purus sit amet luctus. Tincidunt dui ut ornare lectus sit amet est placerat in. Tellus cras adipiscing enim eu turpis egestas pretium. Nulla porttitor massa id neque aliquam
+                vestibulum morbi blandit. Non pulvinar neque laoreet suspendisse interdum consectetur. Felis donec et odio pellentesque. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Dis parturient montes nascetur ridiculus. Amet risus
+                nullam eget felis eget. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum.
+              </div>
+            </div>
+          </section>
+
+          <footer class="mt-5 text-center">Copyright hidden 2024</footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="connexionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Connectez vous sur Hidden</h1>
+          </div>
+          <div class="modal-body">
+            <input type="text" class="form-control" placeholder="email" />
+            <input type="text" class="form-control mt-3" placeholder="mot de passe" />
+
+            <button class="btn btn-dark mt-3 col-12">Connexion</button>
+            <p class="text-center">Pas de compte? <a href="#">Inscrivez-vous</a></p>
+            <p class="text-center">Mot de passe oublié? cliquez <a href="#">ici</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="inscriptionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Rejoignez Hidden</h1>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="Nom" />
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="Prenom" />
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-12">
+                <input type="text" class="form-control" placeholder="email" />
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-12">
+               <select class="form-select">
+                <option>-- Selectionnez un pays --</option>
+                <option>France</option>
+               </select>
+
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="mot de passe" />
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="Confirmer mot de passe" />
+              </div>
+            </div>
+
+            <button class="btn btn-dark mt-3 col-12">Inscription</button>
+            <p class="text-center">Déjà un compte? <a href="#">Connectez-vous</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+    integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+  <script>
+    $(".grid").masonry({
+      // options
+      itemSelector: ".grid-item",
+      columnWidth: 200,
+    });
+
+    console.log($(".grid"));
+    $(document).ready(function () {
+      $("#profile-tab").click(function () {
+        // Your code to execute when #profile-tab is clicked
+        console.log("Profile tab clicked!");
+        $(".grid").masonry("layout");
+
+        setTimeout(function () {
+          $(".grid").masonry("layout");
+        }, 100);
+      });
+
+      $("#home-tab").click(function () {
+        // Your code to execute when #profile-tab is clicked
+        console.log("Profile tab clicked!");
+        $(".grid").masonry("layout");
+
+        setTimeout(function () {
+          $(".grid").masonry("layout");
+        }, 100);
+      });
+    });
+  </script>
+</html>

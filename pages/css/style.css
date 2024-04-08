@@ -1,0 +1,210 @@
+.mt-6{
+    margin-top:200px;
+}
+
+.logo_enter{
+    height:300px;
+    background-image: url('../assets/img/oeil_ferme.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.logo_enter:active{
+    background-image: url('../assets/img/oeil.png');
+}
+
+.sidebar{
+    min-height: 100vh;
+}
+
+
+.logo_enter p {
+    display: none; /* Initially hide the text */
+    position: absolute; /* Position text relative to .logo_enter */
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the text */
+}
+
+.logo_enter:active p {
+    display: block; /* Display text when .logo_enter is active */
+}
+
+.bloc-tendance{
+    height:200px;
+}
+
+.tendances-title{
+    margin-top:-50px;
+    text-align: center;
+}
+
+.img-tendances{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.carousel-inner-accueil {
+    padding-top: 0px;
+    height: 200px;
+}
+
+.navbar-heading{
+    color:grey
+}
+
+.nav-link{
+    display:flex;
+    padding : 20px;
+}
+
+.sb-nav-link-icon{
+margin-right: 15px;
+}
+
+.col-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%!important;
+}
+
+.categorie-cadre{
+    height:130px;
+    width:130px;
+    border:2px solid black
+}
+
+
+
+  .tags{
+    text-align: center;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left: 10px;
+    width:80px;
+    font-size:12px;
+  }
+
+  .tags-container{
+    padding-top:15px;
+    top:90%
+  }
+
+.h-0{
+    height:0px
+}
+
+/* page rechercher */
+.section-sort{
+    height:150px;
+}
+
+.tags-pills{
+
+}
+
+.carousel-indicators-services {
+    position: absolute;
+    right: 0;
+    bottom: 126px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 200px;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.carousel-indicators button[data-bs-target]{
+    width: 200px;
+  }
+  .carousel-indicators button[data-bs-target]:not(.active){
+    opacity: 0.5;
+  }
+
+  .img-service{
+    -webkit-filter: brightness(50%);
+    -webkit-transition: .2s all;
+  }
+
+  .img-service:hover{
+    -webkit-filter: brightness(100%);
+    -webkit-transition: .2s all;
+  }
+
+  .nav-link{
+    cursor: pointer;
+  }
+
+  .modal-header {
+    display: block;
+}
+
+.avatar-container{
+    width:75px;
+    height:75px;
+    border-radius: 50px;
+    overflow:hidden
+}
+
+.border-facebook{
+    border-width: 2px;
+    border-color: #1877F2;
+    border-radius: 0;
+}
+
+.border-instagram{
+    border-image: linear-gradient(to right,#f9ce34, #ee2a7b , #6228d7) 1;
+    border-width: 2px;
+}
+
+section{
+    padding: 30px;
+}
+
+.fa-instagram{
+    background: -webkit-linear-gradient(0deg, #000000 0%, #48abe0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-square-plus{
+    cursor: pointer;
+}
+
+.reservation-alert{
+    height:55px
+}
+
+.date-text{
+    color: grey;
+    font-size: 12px;
+}
+
+.plus-edit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.card.mt-0 {
+   border-radius: 0;
+}
